@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<head>
+<title>Tadas Zvinklys personal website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/ca2794aaa3.js" crossorigin="anonymous"></script>
+
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+    .w3-third img:hover{opacity: 1}
+</style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>Tadas<br>Zvinklys</b></h3>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>  
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        
+        <a href="https://www.facebook.com/tadas.zvinklys.9" target="_blank" class="w3-bar-item"><i class="fab fa-facebook fa-2x"></i></a>
+
+        <a href="https://www.linkedin.com/in/tadas-zvinklys-80b020207/" target="_blank" class="w3-bar-item"><i class="fab fa-linkedin fa-2x"></i>
+
+        <a href="https://github.com/tadzyla" target="_blank" class="w3-bar-item"><i class="fab fa-github-square fa-2x"></i></a>
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">X</a>
+    </nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding w3-text-grey" style="font-weight:bold">Tadas Zvinklys</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="" style="width:100%" onclick="onClick(this)" >
+      
+    </div>
+
+    <div class="w3-third">
+      <img src="" style="width:100%" onclick="onClick(this)" >
+      
+    </div>
+    
+    <div class="w3-third">
+      
+      <img src="" style="width:100%" onclick="onClick(this)" >
+    </div>
+  </div>
+
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+
+    
+     <img src="./images/10498512_778305498905981_2186388508656266626_o.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="600">
+    
+
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <p>
+         Hello, my name is Tadas and I am a self-taught front end developer. This is my personal website and a showcase of my professional skills and personal projects.
+
+      </p>
+      <p>email: <b>tadas.zvinklys@gmai.com</b></p>
+      <p>tel: <b>07543967427</b></p>
+
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Skills</h4>
+      <p class="w3-wide">Javascript</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:50%">intermediate</div>
+      </div>
+      <p class="w3-wide">React</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:30%">beginner</div>
+      </div>
+      <p class="w3-wide">Node</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:50%">intermediate</div>
+      </div>
+      <p class="w3-wide">HTML & CSS</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:50%">intermediate</div>
+    </div>
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">advanced</div>
+      </div>
+
+      <!-- <p></p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p> -->
+      <hr class="w3-opacity">
+
+
+      
+      <div id="projects">
+        <h4 class="w3-padding-16 w3-center">Projects</h4>
+
+        <div class="w3-row-padding" style="margin:0 -16px"> 
+
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-white w3-center">
+                    <li class="w3-black w3-xlarge w3-padding-32">Movie fight</li>
+                    <li class="w3-padding-16">
+                        <img src="./images/Screenshot from 2021-05-11 12-42-06.png" width="100%" alt="movie fight">
+                    </li>
+                    <li class="w3-padding-8">
+                        <p class="w3-justify">
+                            Project movie fight was built, following course material using HTML, CSS and Javascript. This little app
+                            compares two movie stats and helps user to decide which one to choose. Stats extracted from API of movie database.
+                        </p>
+                    </li>
+                <li class="w3-light-grey w3-padding-24">
+                     <a class="w3-button w3-white w3-padding-large" href="https://tadzyla.github.io/project_movie_fights/" target="_blank">Visit</a>
+                </li>
+             </ul>
+        </div>
+        
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center">
+            <li class="w3-black w3-xlarge w3-padding-32">Game Maze</li>
+            <li class="w3-padding-16">
+                <img src="./images/Screenshot from 2021-05-11 12-24-25.png" width="100%" alt="maze game">
+            </li>
+            <li style="padding-bottom: 96px">
+             <p class="w3-justify">Maze game was built follwing course material using HTML, CSS, Javascript and Mater.js library</p>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+                <a class="w3-button w3-white w3-padding-large" href="https://tadzyla.github.io/maze_game/" target="_blank">Visit</a>
+            </li>
+          </ul>
+        </div>
+
+       
+
+        <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center">
+              <li class="w3-black w3-xlarge w3-padding-32">Myself</li>
+              <li class="w3-padding-16">
+                  <img src="./images/Screenshot from 2021-05-11 20-37-02.png" width="100%" alt="maze game">
+              </li>
+              <li style="padding-bottom: 96px">
+               <p class="w3-justify">Funny little project which I call Myself. I draw myself using only CSS language. Take a look!</p>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                  <a class="w3-button w3-white w3-padding-large" href="https://tadzyla.github.io/mySelf/" target="_blank">Visit</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center">
+              <li class="w3-black w3-xlarge w3-padding-32">Etsy shop</li>
+              <li class="w3-padding-16">
+                  <img src="./images/Screenshot from 2021-05-11 21-00-07.png" width="100%" alt="maze game">
+              </li>
+              <li style="padding-bottom: 74px">
+               <p class="w3-justify">One of my passion is photography. Here I want to show you some of my work on Etsy platform, where I sell photo prints for customers</p>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                  <a class="w3-button w3-white w3-padding-large" href="https://www.etsy.com/uk/shop/TadasPhotographyShop" target="_blank">Visit</a>
+              </li>
+            </ul>
+          </div>
+
+        
+      </div>
+    </div>
+   </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      
+      <form method="post" name="myemailform" action="emailform.php">
+
+        <div class="w3-section">
+          <label for="name">Name</label>
+          <input class="w3-input w3-border" type="text" name="name" required>
+        </div>
+
+        <div class="w3-section">
+          <label for="lname">Email</label>
+          <input class="w3-input w3-border" type="text" name="email" required>
+        </div>
+
+        <div class="w3-section">
+          <label for="message">Message</label>
+          <textarea class="w3-input w3-border" rows="4" cols="50" name="message" id="message" required></textarea>
+        </div>
+
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">
+          Send Message
+       </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-grey"> 
+  </footer>
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
