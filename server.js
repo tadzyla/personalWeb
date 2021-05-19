@@ -1,18 +1,17 @@
 
-
 const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.static('public'));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + './public/index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.post('/', (req, res) => {
@@ -22,8 +21,8 @@ app.post('/', (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: ${{ secrets.TZ_EMAIL }},
-            pass: ${{ secrets.TZ_PASS }},
+            user: "bla bla bla", 
+            pass: "bulbulbul"
         }
     })
 
