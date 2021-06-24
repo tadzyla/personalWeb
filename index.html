@@ -13,6 +13,7 @@
 
 
 
+
 <style>
     body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
@@ -21,6 +22,7 @@
 </head>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
+  
 
 <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
@@ -85,9 +87,10 @@
   <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
     <h4><b>About Me</b></h4>
 
-    
-     <img src="./foto/IMG_1245.jpg" alt="Me" class="w3-image w3-padding-32" width="450" height="450">
-    
+    <figure>
+      <img src="/IMG_1245.jpg" alt="Me" class="w3-image w3-padding-32" width="450" height="450">
+      <figcaption>Me doing  Yorkshire Three Peaks Challenge in 2019</figcaption>
+    </figure>
 
     <div class="w3-content w3-justify" style="max-width:600px">
       <p>
@@ -95,8 +98,9 @@
 
       </p>
       <p>email: <b>tadas.zvinklys@gmail.com</b></p>
-      <p>tel: <b>07543967427</b></p>
+      <p>tel: <b>07543967427</b></p>      
 
+      
       <hr class="w3-opacity">
       <h4 class="w3-padding-16">Skills</h4>
       <p class="w3-wide">Javascript</p>
@@ -134,7 +138,7 @@
                 <ul class="w3-ul w3-white w3-center">
                     <li class="w3-black w3-xlarge w3-padding-32">Movie fight</li>
                     <li class="w3-padding-16">
-                        <img src="./foto/Screenshot from 2021-05-11 12-42-06.png" width="100%" alt="movie fight">
+                        <img src="/Screenshot from 2021-05-11 12-42-06.png" width="100%" alt="movie fight">
                     </li>
                     <li class="w3-padding-8">
                         <p class="w3-justify">
@@ -152,7 +156,7 @@
           <ul class="w3-ul w3-white w3-center">
             <li class="w3-black w3-xlarge w3-padding-32">Game Maze</li>
             <li class="w3-padding-16">
-                <img src="./foto/Screenshot from 2021-05-11 12-24-25.png" width="100%" alt="maze game">
+                <img src="/Screenshot from 2021-05-11 12-24-25.png" width="100%" alt="maze game">
             </li>
             <li style="padding-bottom: 52px">
              <p class="w3-justify">Maze game was built follwing course material using HTML, CSS, Javascript and Mater.js library. This game will work only on dekstop, user need buttons to move the ball</p>
@@ -169,7 +173,7 @@
             <ul class="w3-ul w3-white w3-center">
               <li class="w3-black w3-xlarge w3-padding-32">Myself</li>
               <li class="w3-padding-16">
-                  <img src="./foto/Screenshot from 2021-05-11 20-37-02.png" width="100%" alt="myself">
+                  <img src="/Screenshot from 2021-05-11 20-37-02.png" width="100%" alt="myself">
               </li>
               <li style="padding-bottom: 96px">
                <p class="w3-justify">Funny little project which I call Myself. I draw myself using only CSS language. Take a look!</p>
@@ -185,7 +189,7 @@
               <li class="w3-black w3-xlarge w3-padding-32">Etsy shop</li>
               <li class="w3-padding-16">
               
-                <img src="./foto/Screenshot from 2021-05-11 21-00-07.png" width="100%" alt="Etsy shop">
+                <img src="/Screenshot from 2021-05-11 21-00-07.png" width="100%" alt="Etsy shop">
               </li>
               <li style="padding-bottom: 74px">
                <p class="w3-justify">One of my passion is photography. Here I want to show you some of my work on Etsy platform, where I sell photo prints for customers</p>
@@ -246,7 +250,6 @@
 <!-- End page content -->
 </div>
 
-<script src="./js/app.js"></script>
 
 <script>
 // Script to open and close sidebar
@@ -268,10 +271,6 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
-
-
-
-
 
 
 </body>
